@@ -2,4 +2,20 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: auto;
+    box-sizing: border-box;
+    border-radius: 2px solid red;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+
+}
+img{
+    border-radius: 10px;
+}
+.grid2{
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: antiquewhite;
+
 }
