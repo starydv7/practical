@@ -28,7 +28,9 @@ const Home = () => {
         getData();
     }, []);
    
-   
+  const handleClick = () => {
+     
+   }
   return (
     <div>
       <div className={styles.grid}>
@@ -42,6 +44,7 @@ const Home = () => {
               <span>{el.firstName}</span>
               <span> </span>
               <span>{el.lastName}</span>
+              <button className={styles.btn }>Click me</button>
             </div>
           ))}
       </div>
