@@ -24,13 +24,10 @@ const Home = () => {
      console.log(error);
    });
     }
-    useEffect(() => {
-        getData();
+     useEffect(() => {
+       getData();
+      
     }, []);
-   
-  const handleClick = () => {
-     
-   }
   return (
     <div>
       <div className={styles.grid}>
@@ -44,7 +41,7 @@ const Home = () => {
               <span>{el.firstName}</span>
               <span> </span>
               <span>{el.lastName}</span>
-              <button className={styles.btn }>Click me</button>
+              {/* <button className={styles.btn} onClick={handleClick}>Click me</button> */}
             </div>
           ))}
       </div>
@@ -52,4 +49,4 @@ const Home = () => {
   );
 }
 
-export default Home
+export default Home;
