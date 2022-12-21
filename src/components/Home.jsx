@@ -7,8 +7,8 @@ const Home = () => {
     const [data, setData] = useState([]);
     const url = "https://dummyapi.io/data/v1/user";
     const getData = () => {
- fetch(url, {
-   method: "GET",
+    fetch(url, {
+    method: "GET",
    withCredentials: true,
    headers: {
      "app-id": "6200f750b9d3f148c5712e63",
