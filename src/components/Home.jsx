@@ -31,15 +31,20 @@ const Home = () => {
    
   return (
     <div className={styles.grid}>
-      {data.length>0 && data.map((el) => (
-        <div key={el.id}>
-          <img src={el.picture} alt="photos" />
-          <p>{el.id}</p>
-        </div>
-      ))}
-          
+      {data.length > 0 &&
+        data.map((el) => (
+          <div key={el.id}>
+            <img src={el.picture} alt="photos" />
+            <p>{el.id}</p>
+            <span>{el.title}</span>
+            <span> </span>
+            <span>{el.firstName}</span>
+            <span> </span>
+            <span>{el.lastName}</span>
+          </div>
+        ))}
     </div>
-  )
+  );
 }
 
 export default Home
