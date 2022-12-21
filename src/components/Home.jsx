@@ -17,8 +17,8 @@ const Home = () => {
  })
    .then((resp) => resp.json())
    .then(function (data) {
-     console.log(data);
-     setData(data);
+     console.log(data.data);
+     setData(data.data);
    })
    .catch(function (error) {
      console.log(error);
@@ -31,6 +31,12 @@ const Home = () => {
    
   return (
     <div className={styles.grid}>
+      {data.length>0 && data.map((el) => (
+        <div key={el.id}>
+          <img src={el.picture} alt="photos" />
+          <p>{el.id}</p>
+        </div>
+      ))}
           
     </div>
   )
