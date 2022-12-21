@@ -21,4 +21,63 @@ img{
     border-radius: 10px;
     background-color: antiquewhite;
 }
+ @media only screen and (min-width: 580px) and (max-width:880px) {
 
+
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .grid>a {
+                font-size: 25px;
+            }
+            .grid{
+                grid-template-columns: repeat(3,1fr)
+            }
+
+        }
+  @media only screen and (min-width: 320px) and (max-width:580px) {
+
+
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .grid>a {
+                font-size: 25px;
+            }
+            .grid{
+                grid-template-columns: repeat(2,1fr)
+            }
+
+        }
+         @media only screen and (min-width: 100px) and (max-width:320px) {
+
+
+            .grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .grid>a {
+                font-size: 25px;
+            }
+            .grid{
+                grid-template-columns: repeat(1,1fr)
+            }
+
+        }
+         @media only screen and (min-width: 880px) and (max-width:1280px) {
+
+
+            .grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            .grid>a {
+                font-size: 25px;
+            }
+            .grid{
+                grid-template-columns: repeat(5,1fr)
+            }
+
+        }
